@@ -1,0 +1,14 @@
+<a class="btn btn-warning" ui-sref="store">back</a>
+<div class="store list">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3>{{ stores.name }}</h3>
+            <a class="btn btn-warning" ui-sref="store-update ({ id: stores.id })">edit</a>
+            <a class="btn btn-danger"ng-click="delete (stores.id)">delete</a>
+            <hr>
+        </div>
+        <div class="panel-body">
+            {{ stores.address }}
+        </div>
+    </div>
+</div>
